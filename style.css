@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 
 *{
     margin: 0;
@@ -10,11 +11,27 @@ body {
     color: #fff;
 }
 
+header {
+    padding: 2% 0 0 15%;
+}
+
+nav {
+    display: flex;
+    gap: 80px;
+}
+
+nav a {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: #22D4FD;
+    font-weight: 600;
+    text-decoration: none;}
+
 .presentation {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10% 15%;
+    padding: 8% 15%;
 }
 
 .presentation__content {
@@ -34,24 +51,62 @@ body {
     font-family: 'Krona one', sans-serif;
 }
 
+.presentation__content h2 {
+    font-size: 24px;
+    font-family: 'Krona one', sans-serif;
+}
 .blue-highlight {
     color: #22D4FD;
 }
 
+.presentation__content_subtitle {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
 .presentation__content__links {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .presentation__content__links__link {
-    background-color: #22D4FD;
-    color: #000;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 16PX;
+    color: #f6f6f6;
+    border: 2px #22D4FD solid;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 24px;
     text-align: center;
     text-decoration: none;
     width: 280px;
-    border-radius: 16px;
+    border-radius: 8px;
     padding: 21.5px 0 ;
+}
+
+.presentation__content__links__link:hover {
+    background-color: #272727;
+}
+
+.fa-brands {
+    color: #22D4FD;
+}
+
+footer {
+    display: flex;
+    background-color: #22D4FD;
+    padding: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
 }
