@@ -17,11 +17,11 @@ header {
 
 nav {
     display: flex;
-    gap: 80px;
+    gap: 5rem;
 }
 
 nav a {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     color: #22D4FD;
     font-weight: 600;
@@ -32,27 +32,28 @@ nav a {
     align-items: center;
     justify-content: space-between;
     padding: 8% 15%;
+    gap: 5.125rem;
 }
 
 .presentation__content {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .presentation__content p {
-    font-size: 24px;
+    font-size: 1.25rem;
     font-family: 'Montserrat', sans-serif;
 }
 
 .presentation__content h1 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: 'Krona one', sans-serif;
 }
 
 .presentation__content h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Krona one', sans-serif;
 }
 .blue-highlight {
@@ -62,31 +63,31 @@ nav a {
 .presentation__content_subtitle {
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .presentation__content__links {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .presentation__content__links__link {
     display: flex;
     align-items: baseline;
     justify-content: center;
-    gap: 16PX;
+    gap: 1rem;
     color: #f6f6f6;
-    border: 2px #22D4FD solid;
+    border: .125rem #22D4FD solid;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
     text-decoration: none;
-    width: 280px;
-    border-radius: 8px;
-    padding: 21.5px 0 ;
+    width: 50%;
+    border-radius: 0.03125rem;
+    padding: 1.375rem 0 ;
 }
 
 .presentation__content__links__link:hover {
@@ -97,16 +98,37 @@ nav a {
     color: #22D4FD;
 }
 
+.presentation__img {
+    width: 50%;
+}
+
 footer {
     display: flex;
     background-color: #22D4FD;
-    padding: 24px;
+    padding: 1.5rem;
     align-items: center;
     justify-content: center;
 }
 
 footer p {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     color: #000;
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding: 6%;
+    }
+
+    .presentation {
+        flex-direction: column-reverse;
+        font-size: 1.25rem;
+        padding: 5%;
+    }
+
+    .presentation__content {
+        justify-content: center;
+        width: auto;
+    }
 }
